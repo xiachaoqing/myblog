@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: xiachaoqing
  * @Date: 2020-09-24 10:38:56
- * @LastEditTime: 2020-09-29 17:21:33
+ * @LastEditTime: 2020-10-22 09:54:09
  * @LastEditors: xiachaoqing
  */
 'use strict'
@@ -20,7 +20,7 @@ module.exports = {
     proxyTable: {
       '/a/': {
         //将twww.lvyinglc.com印射为/api
-        target: 'http://81.70.93.41', // 接口域名
+        target: 'http://api.xiachaoqing.com', // 接口域名
         changeOrigin: true,//是否跨域
         // pathRewrite: {
         //     '^/api': '/api'
@@ -29,7 +29,7 @@ module.exports = {
       },
       '/localapi': {
         //将twww.lvyinglc.com印射为/api
-        target: 'http://81.70.93.41', // 接口域名
+        target: 'http://api.xiachaoqing.com', // 接口域名
         changeOrigin: true,//是否跨域
         pathRewrite: {
             '^/localapi': ''

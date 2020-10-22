@@ -14,7 +14,7 @@ import {
 } from 'STORE/mutation-types'
 
 /* eslint-disable */
-const API_ROOT = 'http://81.70.93.41'
+const API_ROOT = 'http://api.xiachaoqing.com'
 const API_ROOT_DEV = '/localapi'
 
 /* eslint-enable */
