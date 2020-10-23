@@ -1,3 +1,10 @@
+<!--
+ * @Description: 底部
+ * @Author: xiachaoqing
+ * @Date: 2020-09-24 10:38:56
+ * @LastEditTime: 2020-10-22 18:06:53
+ * @LastEditors: xiachaoqing
+-->
 <template>
   <div id="m-footer">
     <div class="footer-wrap">
@@ -11,7 +18,7 @@
         本站点采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">知识共享 署名-非商业性使用-禁止演绎 4.0 国际 许可协议</a>
       </p>
       <p>
-        本站由 @{{ blogInfo.blogName || '博客' }} 创建 - © 2020. 备案中
+        本站由 @{{ blogInfo.blogName || '博客' }} 创建 - © 2020. 京ICP备2020039465号
       </p>
     </div>
   </div>
