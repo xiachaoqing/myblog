@@ -11,7 +11,7 @@
     <el-upload
       ref="upload"
       class="cover-uploader"
-      action
+      action="http://up-z2.qiniu.com"
       :data="token"
       :show-file-list="false"
       :auto-upload="false"
@@ -39,9 +39,7 @@
 import {
   mapActions
 } from 'vuex'
-import axios from 'axios'
 import cropperBox from './cropperBox'
-
 export default {
   name: 'up-cover',
   components: {
@@ -122,7 +120,6 @@ export default {
           this.$toast(`图片太大了~最多支持${this.maxSize}MB`, 'error')
           return false
         }
-
         this.$refs.cropperBox.show()
         this.$refs.cropperBox.loadCropper(file.raw)
       }
@@ -132,8 +129,7 @@ export default {
       this.getQiniuToken(true)
         .then((data) => {
           this.token = data
-          console.log(this.$refs.upload)
-          axios.post('http://upload-z1.qiniup.com')
+          this.$refs.upload.submit()
         })
     },
     handleAvatarSuccess (response, file) {
@@ -147,7 +143,7 @@ export default {
     },
     onUploadProgress (event, file, fileList) {
       this.uploadProgress = parseInt(event.percent) - 1
-    },
+    }
   }
 }
 </script>
@@ -202,5 +198,4 @@ export default {
             font-size: 18px
         .img-mask
           opacity: 0
-
 </style>

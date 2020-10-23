@@ -19,14 +19,14 @@
           :stroke-width="30" 
           :percentage="uploadProgress">
         </el-progress>
-        <el-button 
-          type="success"
+        <button 
+          type="button" 
           class="cropper-btn" 
           @click="finishCropImage" 
           :disabled="btnTips.disable"
           :class="{'btn-bg': uploading}">
           {{ btnTips.value }}
-        </el-button>
+        </button>
       </div>
     </div>
   </div>
@@ -34,7 +34,6 @@
 
 <script>
 import Cropper from 'cropperjs'
-
 export default {
   name: 'cropper-box',
   props: {
@@ -97,7 +96,6 @@ export default {
     },
     finishCropImage () { // 完成裁剪，并输出裁剪结果，然后传到七牛
       this.uploading = true
-
       const croppedCanvas = this.cropper.getCroppedCanvas()
       const croppedDataUrl = croppedCanvas.toDataURL(this.rawFile.type)
       const blob = this.dataURLtoBlob(croppedDataUrl)
@@ -217,4 +215,3 @@ export default {
       .btn-bg
         background: #FF000000
 </style>
-

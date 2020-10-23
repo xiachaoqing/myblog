@@ -137,6 +137,9 @@ export default {
       this.$refs.cropperBox.close()
     },
     beforeAvatarUpload (file) {
+      let uploadFile = new window.File([this.newFile], file.name, { type: this.newFile.type })
+      uploadFile.uid = this.newFile.uid
+      return Promise.resolve(uploadFile)
       // let uploadFile = new window.File([this.newFile], file.name, { type: this.newFile.type })
       // uploadFile.uid = this.newFile.uid
       // // return Promise.resolve(uploadFile)
