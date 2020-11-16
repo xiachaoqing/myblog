@@ -40,7 +40,7 @@ export default {
   props: ['article'],
   data () {
     return {
-      defaultCover: 'http://blogimg.codebear.cn/FrTy2sZVtGZGYMFj6PAuNe7T6g3__water'
+      defaultCover: 'https://cdn.xiachaoqing.com/FrTy2sZVtGZGYMFj6PAuNe7T6g3__water.png'
     }
   },
   computed: {
