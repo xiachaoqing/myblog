@@ -11,7 +11,7 @@
     <el-upload
       ref="upload"
       class="cover-uploader"
-      action="http://upload-z1.qiniup.com"
+      action="https://upload-z1.qiniup.com"
       :data="token"
       :show-file-list="false"
       :auto-upload="false"

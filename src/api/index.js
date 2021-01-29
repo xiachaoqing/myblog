@@ -81,7 +81,7 @@ export default {
    * 上传图片到七牛
    */
   uploadToQiniu (params) {
-    return axios.post('http://upload-z1.qiniup.com', params, {
+    return axios.post('https://upload-z1.qiniup.com', params, {
       headers: {
         'content-type': 'multipart/form-data'
       },
