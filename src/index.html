@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang='zh-CN'>
   <head>
     <meta charset="utf-8">
@@ -6,7 +5,21 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>夏少爷的剑的博客</title>
-    <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+    <!-- vue -->
+    <script src="util/vue.min.js"></script>
+    <!-- vue-router -->
+    <script src="util/vue-router.min.js"></script>
+    <!-- element-ui 引入样式 -->
+    <link rel="stylesheet" href="util/lib/theme-chalk/index.css">
+    <!-- element-ui 组件库 -->
+    <script src="util/lib/index.js"></script>
+    <!-- monent日期库 -->
+    <script src="util/moment.min.js"></script>
+    <!-- markdown解析 -->
+    <script src="util/marked.js"></script>
+    <script src="util/highlight.min.js"></script>
+    <script src="util/lib/TCaptcha.js"></script>
+    
   </head>
   <body>
     <noscript>本站大量使用 JavaScript 技术，请确保您的浏览器打开了 JavaScript 支持，谢谢。</noscript>
@@ -45,22 +58,7 @@
     </script>
     <!-- built files will be auto injected -->
     <% if (htmlWebpackPlugin.options.prod) { %>
-      <!-- 如果是开发环境就不需要引入cdn了，直接用本地的，不然没网都开发不了 -->
-
-      <!-- vue -->
-      <script src="util/vue.min.js"></script>
-      <!-- vue-router -->
-      <script src="util/vue-router.min.js"></script>
-      <!-- element-ui 引入样式 -->
-      <link rel="stylesheet" href="util/lib/theme-chalk/index.css">
-      <!-- element-ui 组件库 -->
-      <script src="util/lib/index.js"></script>
-      <!-- monent日期库 -->
-      <script src="util/moment.min.js"></script>
-      <!-- markdown解析 -->
-      <script src="util/marked.js"></script>
-      <script src="util/highlight.min.js"></script>
-    
+      <!-- 如果是开发环境就不需要引入cdn了，直接用本地的，不然没网都开发不了 -->    
       <script>
         // 百度统计
         // TODO：上传到github时注释掉，避免别人用这个博客时，也统计到这里来
