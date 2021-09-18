@@ -137,13 +137,13 @@ export default {
     ])
   },
   created() {
-    document.title = `${this.blogInfo.blogName}的博客`;
+    // document.title = '夏少爷剑的博客';
     if (!this.isAdminWrap) {
       this.getBlogInfo().catch(()=> {})
     }
   },
   mounted() {
-    // document.title = `${this.blogInfo.blogName}的博客`;
+    document.title = '夏少爷剑的博客';
     this.updateScreen()
     window.addEventListener('resize', this.updateScreen)
     window.addEventListener('scroll', this.scrollListener)
@@ -223,11 +223,11 @@ export default {
     visibilityChange () {
       switch (document[this.getVisibilityState()]) {
         case 'visible':
-          document.title = `${this.blogInfo.blogName}的博客`;
+          document.title = '夏少爷剑的博客';
           break
         case 'hidden':
         default:
-          document.title = `${this.blogInfo.blogName}的博客`;
+          document.title = '夏少爷剑的博客';
           break
       }
     }
