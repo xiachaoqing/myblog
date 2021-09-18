@@ -137,12 +137,13 @@ export default {
     ])
   },
   created() {
+    document.title = `${this.blogInfo.blogName}的博客`;
     if (!this.isAdminWrap) {
       this.getBlogInfo().catch(()=> {})
     }
   },
   mounted() {
-    document.title = `${this.blogInfo.blogName}的博客`;
+    // document.title = `${this.blogInfo.blogName}的博客`;
     this.updateScreen()
     window.addEventListener('resize', this.updateScreen)
     window.addEventListener('scroll', this.scrollListener)

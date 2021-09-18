@@ -1,8 +1,8 @@
 {
-  "name": "CodeBear-blog",
+  "name": "夏少爷的剑",
   "version": "1.0.0",
-  "description": "CodeBear的blog",
-  "author": "CodeBear <249900679@qq.com>",
+  "description": "夏少爷的剑的blog",
+  "author": "夏少爷的剑<631753810@qq.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
