@@ -38,13 +38,6 @@ router.beforeEach((to, from, next) => {
   if (to.fullPath.indexOf('/admin') !== -1) {
     store.commit('IS_ADMIN_WRAP', true)
   } else {
-    let event = to.name
-    if (to.name === 'article') {
-      event += ` - ${to.query.id}`
-    }
-    if (to.name === 'articleList') {
-      event += `-${to.query.type} - ${to.query.id}`
-    }
     store.commit('IS_ADMIN_WRAP', false)
   }
   if (to.meta.requireAuth) {
