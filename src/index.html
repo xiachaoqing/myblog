@@ -73,10 +73,7 @@
     </script>
     <% } else { %>
       <script>
-        // 百度统计
-        window.baidu = ({from = (window.urlParams.ADTAG || '-'), type = 'page', event = '-'}) => {
-          console.log('dev模式不上报百度统计：', from, type, event)
-        }
+         console.log('dev模式不上报百度统计');
       </script>
     <% } %>
   </body>
