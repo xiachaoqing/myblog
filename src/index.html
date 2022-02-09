@@ -63,17 +63,12 @@
         // 百度统计
         // TODO：上传到github时注释掉，避免别人用这个博客时，也统计到这里来
         // 自行更改src链接
-       
         var _hmt = _hmt || [];
         (function() {
-          //var hm = document.createElement("script");
-          //hm.src = "https://hm.baidu.com/hm.js?9933e6d78b342f270a46bfe831b671b8";
-          //var s = document.getElementsByTagName("script")[0]; 
-          //s.parentNode.insertBefore(hm, s);
-          // 百度统计
-          window.baidu = ({from = (window.urlParams.ADTAG || '-'), type = 'page', event = '-'}) => {
-            _hmt.push(['_trackEvent', from, type, event])
-          }
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?2f3ba1f4ddee63ff87601d6d698c0dc8";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
         })();
     </script>
     <% } else { %>
