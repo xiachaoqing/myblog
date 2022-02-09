@@ -45,9 +45,6 @@ router.beforeEach((to, from, next) => {
     if (to.name === 'articleList') {
       event += `-${to.query.type} - ${to.query.id}`
     }
-    window.baidu({
-      event: event
-    })
     store.commit('IS_ADMIN_WRAP', false)
   }
   if (to.meta.requireAuth) {
