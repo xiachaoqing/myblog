@@ -40,7 +40,7 @@ export default {
   props: ['article'],
   data () {
     return {
-      defaultCover: 'https://cdn.xiachaoqing.com/FrTy2sZVtGZGYMFj6PAuNe7T6g3__water.png'
+      defaultCover: 'https://cdn.xiachaoqing.com/abstract-background-of-four-colored-triangles.jpg'
     }
   },
   computed: {
