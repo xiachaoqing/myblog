@@ -137,13 +137,13 @@ export default {
     ])
   },
   created() {
-    // document.title = '夏少爷的剑博客';
+    // document.title = '技术分享日记';
     if (!this.isAdminWrap) {
       this.getBlogInfo().catch(()=> {})
     }
   },
   mounted() {
-    document.title = '夏少爷的剑博客';
+    document.title = '技术分享日记';
     this.updateScreen()
     window.addEventListener('resize', this.updateScreen)
     window.addEventListener('scroll', this.scrollListener)
@@ -223,11 +223,11 @@ export default {
     visibilityChange () {
       switch (document[this.getVisibilityState()]) {
         case 'visible':
-          document.title = '夏少爷的剑博客';
+          document.title = '技术分享日记';
           break
         case 'hidden':
         default:
-          document.title = '夏少爷的剑博客';
+          document.title = '技术分享日记';
           break
       }
     }
