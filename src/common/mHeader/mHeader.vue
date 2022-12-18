@@ -80,11 +80,11 @@ export default {
           icon: 'icon-friends-link',
           to: 'friends'
         },
-        {
-          name: '更多',
-          icon: 'icon-more',
-          to: 'morefunc'
-        },
+        // {
+        //   name: '更多',
+        //   icon: 'icon-more',
+        //   to: 'morefunc'
+        // },
         {
           name: '搜索',
           icon: 'icon-search',
